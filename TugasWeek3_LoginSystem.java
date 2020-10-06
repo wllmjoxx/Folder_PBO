@@ -8,7 +8,7 @@ public class TugasWeek3_LoginSystem {
         String userinput, passinput;
 
         Scanner keyboard = new Scanner(System.in);
-
+        ulang:
         System.out.printf("            =======SELAMAT DATANG=======\n");
         System.out.printf("Silahkan masukan Username dan Password anda!\n");
 
@@ -26,6 +26,7 @@ public class TugasWeek3_LoginSystem {
             System.out.printf("4. My profile");
         }else {
             System.out.println("Silahkan login kembali");
+            goto ulang;
         }
     }
 }
